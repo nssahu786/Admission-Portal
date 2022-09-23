@@ -1,7 +1,7 @@
 const express = require('express')
 const cdb = require('./database/cdb');
 const app = express()                  
-const port = 5501
+const port = process.env.PORT || 5501;
 const cookieParser = require('cookie-parser')
 
 var session = require("express-session"); //message
