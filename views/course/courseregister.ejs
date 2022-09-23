@@ -1,0 +1,77 @@
+<%- include('../header.ejs') %>
+<br><br><br><br><br><br>
+
+<h1 class="text-center bg-light text-primary"><b><span class="text-success">B.Tech</span> Registration Form</b></h1>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="/assets/img/btech.jpg" alt="" style="width: 100% !important;">
+        </div>
+        <div class="col-md-7">
+            <form action="/course/courseinsert" method="post">
+                <div class="mb-3">
+                    <label for="" class="bg-light text-danger">STUDENT NAME</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" value="<%= n %>">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">EMAIL</label>
+                    <input class="form-control" placeholder="Enter Email" type="email" name="email" id="email" value="<%= e %>">
+                    <small class="form-text text-muted">We"ll never share your email with anyone else.</small>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="bg-light text-danger">MOBILE NUMBER</label>
+                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile Number">
+                    <span id="message" style="color: red; font-weight: bold;"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleTextarea" class="bg-light text-danger">ADDRESS</label>
+                    <textarea class="form-control" id="address" name="address" rows="3"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">GENDER</label>
+                    <br>
+                    <input type="radio" id="" name="gender" value="male" required="">Male
+                    <input type="radio" id="" name="gender" value="female" required="">Female
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">COURSE</label><br>
+                    <select name="course" class="form-control">
+                        <option value="BTECH selected">BTECH</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">BRANCH</label><br>       
+                    <select name="branch" class="form-control" required="">
+                        <option value="0">SELECT</option>
+                        <option value="CSE">C.S.E</option>
+                        <option value="IT">I.T</option>
+                        <option value="EE">E.E</option>
+                        <option value="EC">E.C</option>
+                        <option value="MECH">MECH.</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="AUTOMOBILE">AUTOMOBILE</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">COLLEGE</label><br>
+                    <select name="college" class="form-control" required="">
+                        <option value="0">SELECT</option>
+                        <option value="ITM">ITM</option>
+                        <option value="MPCT">MPCT</option>
+                        <option value="MITS">MITS</option>
+                        <option value="RJIT">RJIT</option>
+                        <option value="OTHERS">OTHERS</option>
+                    </select>
+                </div>
+                <br>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">SUBMIT</button>      
+                </div>  
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<%- include('../footer.ejs') %>

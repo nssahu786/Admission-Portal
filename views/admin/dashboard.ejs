@@ -1,0 +1,36 @@
+<%- include('../header.ejs') %>
+<br><br><br><br>
+<section>
+    <h1 class="bg-light text-danger text-center">ADMIN DASHBOARD</h1><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="dash-left">
+                    <div class="position-sticky">
+                        <div class="list-group list-group-flush mx-3 mt-4">
+                            <a href="/admin/dashboard" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span class="text-danger">DASHBOARD</span>
+                            </a>
+                            <a href="/admin/dashboard/detail" class="list-group-item list-group-item-action py-2 ripple active">
+                                <i class="fa-solid fa-eye"></i><span>DISPLAY STUDENTS</span>
+                            </a>
+                            <a href="/admin/dashboard/displayuser" class="list-group-item list-group-item-action py-2 ripple active">
+                                <i class="fa-solid fa-binoculars"></i><span>REGISTERED STUDENTS</span>
+                            </a>
+                            <a href="/admin/dashboard/displaycontact" class="list-group-item list-group-item-action py-2 ripple active">
+                                <i class="fa-solid fa-binoculars"></i><span>DISPLAY CONTACTS</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h3 class="text-center bg-secondary text-success">WELCOME ADMIN</h3><br>
+                <p class="text-justify bg-light text-warning">Administrators, commonly known as admins are editors who have been granted the technical ability to perform certain special actions. These include the ability to block and unblock user accounts, IP addresses, and IP ranges from editing, edit fully protected pages, protect and unprotect pages from editing, delete and undelete pages, rename pages without restriction, and use certain other tools.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<br><br><br>
+<%- include('../footer.ejs') %>

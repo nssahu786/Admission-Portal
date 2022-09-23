@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/assets/img/logo4.png">
+  <title>Admission Portal</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="/my.css">
+  
+  <!-- BOOTSTRAP CORE STYLE CSS -->
+  <link href="/assets/css/bootstrap.css" rel="stylesheet" />
+  <!-- FONT AWESOME CSS -->
+  <link href="/assets/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- FLEXSLIDER CSS -->
+  <link href="/assets/css/flexslider.css" rel="stylesheet" />
+  <!-- CUSTOM STYLE CSS -->
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  <!-- Google	Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+
+  <style>
+    .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    }
+    .styled-table th,
+    .styled-table td {
+      padding: 12px 15px;
+    }
+    .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    }
+
+    .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    }
+
+    .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+    }
+    .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+    }
+
+   
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <!--NAVBAR SECTION START-->
+  <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="logo-custom" src="/assets/img/logo4.png" alt="" /></a>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+          <div class="navbar-collapse collapse move-me">
+            <ul class="nav navbar-nav navbar-left">
+              <li><a href="/user/home">HOME</a></li>
+              <li><a href="/user/about">ABOUT</a></li>
+              <li><a href="/user/faculty">FACULTY</a></li>
+              <li><a href="/user/courses">COURSES</a></li>
+              <li><a href="/user/contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-2"><button class="btn btn-lg btn-warning" style="margin-top: 31px;text-transform: uppercase;border-radius: 25px;"><%= n %></button></div>
+        <div class="col-md-1"><button class="btn btn-lg btn-warning" style="margin-top: 31px;border-radius: 25px;"><a href="/logout" style="color: white !important;"> LOGOUT</a></button></div>
+      </div>
+    </div> 
+  </div>
+  <!--NAVBAR SECTION END-->

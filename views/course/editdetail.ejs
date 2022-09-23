@@ -1,0 +1,99 @@
+<%- include('../header.ejs') %>
+<br><br><br>
+<div class="banner9">
+    <br><br>
+    <h1 class="text-center bg-light welcome"><span style="text-transform: uppercase;color: lawngreen;position: relative;top: 111px;"><b>DASHBOARD</b></span></h1>
+</div>
+<div class="banner8">
+    <br><br> <h1 class="text-center bg-light text-warning welcome">EDIT DASHBOARD</h1>
+</div><br>
+<h1 class="text-center bg-light text-primary"><b><span class="text-success">B.Tech</span> Edit Form</b></h1>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="/assets/img/btech.jpg" alt="" style="width: 100% !important;">
+        </div>
+        <div class="col-md-7">
+            <form action="/detail/updatedetail/<%= data._id %>" method="post">
+                <div class="mb-3">
+                    <label for="" class="bg-light text-danger">STUDENT NAME</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" value="<%= data.name %>">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">EMAIL</label>
+                    <input class="form-control" placeholder="Enter Email" type="email" name="email" id="email" value="<%= data.email %>">
+                    <small class="form-text text-muted">We"ll never share your email with anyone else.</small>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="bg-light text-danger">MOBILE NUMBER</label>
+                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile Number" value="<%= data.mobile %>">
+                    <span id="message" style="color: red; font-weight: bold;"></span>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleTextarea" class="bg-light text-danger">ADDRESS</label>
+                    <textarea class="form-control" id="address" name="address" rows="3"><%= data.address %></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">GENDER</label>
+                    <br>
+                    <input type="radio" id="" name="gender" value="male" <%=data.gender=='male'
+                    ? 'checked' : '' %> required="">Male
+                    <input type="radio" id="" name="gender" value="female" <%=data.gender=='female'
+                    ? 'checked' : '' %> required="">Female
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">COURSE</label><br>
+                    <select name="course" class="form-control">
+                        <option value="0">SELECT</option>
+                        <option value="BTECH" <%=data.course=='BTECH'
+                        ? 'selected' : '' %>>BTECH</option>
+        
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">BRANCH</label><br>       
+                    <select name="branch" class="form-control" required="">
+                        <option value="0">SELECT</option>
+                        <option value="CSE" <%=data.branch=='CSE'
+                        ? 'selected' : '' %>>C.S.E</option>
+                        <option value="IT" <%=data.branch=='IT'
+                        ? 'selected' : '' %>>I.T</option>
+                        <option value="EE" <%=data.branch=='EE'
+                        ? 'selected' : '' %>>E.E</option>
+                        <option value="EC" <%=data.branch=='EC'
+                        ? 'selected' : '' %>>E.C</option>
+                        <option value="MECH" <%=data.branch=='MECH'
+                        ? 'selected' : '' %>>MECH.</option>
+                        <option value="CIVIL" <%=data.branch=='CIVIL'
+                        ? 'selected' : '' %>>CIVIL</option>
+                        <option value="AUTOMOBILE" <%=data.branch=='AUTOMOBILE'
+                        ? 'selected' : '' %>>AUTOMOBILE</option>
+                        
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="bg-light text-danger">COLLEGE</label><br>
+                    <select name="college" class="form-control" required="">
+                        <option value="0">SELECT</option>
+                        <option value="ITM" <%=data.college=='ITM'
+                        ? 'selected' : '' %>>ITM</option>
+                        <option value="MPCT" <%=data.college=='MPCT'
+                        ? 'selected' : '' %>>MPCT</option>
+                        <option value="MITS" <%=data.college=='MITS'
+                        ? 'selected' : '' %>>MITS</option>
+                        <option value="RJIT" <%=data.college=='RJIT'
+                        ? 'selected' : '' %>>RJIT</option>
+                        
+                    </select>
+                </div>
+                <br>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">SUBMIT</button>      
+                </div>  
+            </form>
+        </div>
+    </div>
+</div>
+
+<%- include('../footer.ejs') %>

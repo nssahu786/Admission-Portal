@@ -1,0 +1,205 @@
+<%- include('../header.ejs') %>
+
+ <!--HOME SECTION  START-->
+ <div class="home-sec" id="home">
+    <div class="overlay">
+        <div class="container">
+            <div class="row text-center ">
+                <div class="col-lg-12  col-md-12 col-sm-12">
+                    <div class="flexslider set-flexi" id="main-section">
+                        <ul class="slides move-me"><br><br><br>
+                            <li>
+                                <h3>Delivering Quality Education</h3>
+                                <h1>THE UNIQUE METHOD</h1>
+                            </li>
+                            <li>
+                                <h3>Delivering Quality Education</h3>
+                                <h1>UNMATCHED APPROACH</h1>
+                            </li>
+                            <li>
+                                <h3>Delivering Quality Education</h3>
+                                <h1>AWESOME FACULTY PANEL</h1>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--HOME SECTION END-->
+
+ 
+<div class="banner7">
+   <br><br> <h1 class="text-center bg-light text-warning welcome">WELCOME <span class="text-info" style="text-transform: uppercase;"><b><%= n %></b></span></h1>
+    <p class="text-center bg-light text-danger"><b><i>We offer various courses. Courses generally have a fixed program of sessions every week during the term, called lessons or classes.</i></b></p>
+</div>
+
+<!--COURSES SECTION START-->
+<div id="course-sec" class="container-fluid set-pad banner">
+    <div class="row text-center">
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+            <h1 class="header-line">OUR COURSES </h1>
+            <p>
+                <b style="color: white;">In higher education a course is a unit of teaching that typically lasts one academic term, is led by one or more instructors (teachers or professors), and has a fixed roster of students.</b></p>
+        </div>
+    </div>
+    <div class="row set-row-pad">
+        <div class="col-lg-6 col-md-6 col-sm-6 ">
+            <img src="/assets/img/mtech.jpg" class="img-thumbnail" />
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="/course/register" class="collapsed">
+                                <strong>B. TECH</strong>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p>A Bachelor of Technology (Latin Baccalaureus Technologiae, commonly abbreviated as B.Tech. or BTech; with honours as B.Tech. (Hons.)) is an undergraduate academic degree conferred after the completion of a three to five-year program of studies at an accredited university or accredited university-level institution originated in the United Kingdom</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                                <strong> 250+</strong> ENGINEERING COURSES
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p>
+                                Engineering is the use of scientific principles to design and build machines, structures, and other items, including bridges, tunnels, roads, vehicles, and buildings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-info">
+                <span style="font-size:40px;">
+                    <strong> 2500 + </strong>
+                    <hr />
+                    Centers
+                </span>
+            </div><br>
+            <% if(b){ %>
+                <a class="btn btn-success btn-lg btn-block" href="/userdetail/displaydashboard" role="button">Display Dashboard</a>
+            <% }else { %>  
+                <a class="btn btn-danger btn-lg btn-block" href="/course/courseregister" role="button">Apply Now!</a>
+            <% } %>
+        </div>
+    </div>
+    <div class="row set-row-pad">
+        <div class="col-lg-6 col-md-6 col-sm-6 " >
+            <img src="/assets/img/mca.jpg" class="img-thumbnail" />
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                                <strong>MCA</strong>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p>The students entering MCA must have a bachelor degree with Mathematics as one of the subjects at higher secondary or graduation. The program is a blend of both theoretical and practical knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
+                                <strong> 250+</strong> COMPUTER APPLICATION COURSES
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p>
+                                The Computer Applications program is designed to provide the skills needed in the use of application software on a computer. Applications covered include word processing, spreadsheets, databases, desktop publishing, the Internet, and the Windows operating systems.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="alert alert-info" >
+                <span style="font-size:40px;">
+                    <strong> 2500 + </strong>
+                    <hr />
+                    Centers
+                </span>
+            </div><br>
+            <% if(m){ %>
+                <a class="btn btn-success btn-lg btn-block" href="/userdetail/displaydashboard" role="button">Display Dashboard</a>
+            <% }else { %>  
+                <a class="btn btn-danger btn-lg btn-block" href="/course/mcaregister" role="button">Apply Now!</a>
+            <% } %>
+            <!-- <a class="btn btn-danger btn-lg btn-block" href="/course/mcaregister" role="button">Apply Now!</a> -->
+        </div>
+    </div>
+    <div class="row set-row-pad">
+        <div class="col-lg-6 col-md-6 col-sm-6 " >
+            <img src="/assets/img/mba.jpg" class="img-thumbnail" />
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed">
+                                <strong>MBA</strong>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p>Master of Business Administration (MBA; also Master's in Business Administration) is a postgraduate degree focused on business administration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default" >
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="collapsed">
+                                <strong> 250+</strong> MANAGEMENT COURSES
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                            <p>
+                                Management (or managing) is the administration of an organization, whether it is a business, a non-profit organization, or a government body. It is the art and science of managing resources of the business.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="alert alert-info">
+                <span style="font-size:40px;">
+                    <strong> 2500 + </strong>
+                    <hr />
+                    Centers
+                </span>
+            </div><br>
+            <% if(mb){ %>
+                <a class="btn btn-success btn-lg btn-block" href="/userdetail/displaydashboard" role="button">Display Dashboard</a>
+            <% }else { %>  
+                <a class="btn btn-danger btn-lg btn-block" href="/course/mbaregister" role="button">Apply Now!</a>
+            <% } %>
+        </div>
+    </div>
+    
+</div>
+<!-- COURSES SECTION END-->
+
+
+<%- include('../footer.ejs') %>

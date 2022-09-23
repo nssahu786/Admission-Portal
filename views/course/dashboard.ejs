@@ -1,0 +1,51 @@
+<%- include('../header.ejs') %>
+<br><br><br>
+<div class="banner9">
+    <br><br>
+    <h1 class="text-center bg-light welcome"><span style="text-transform: uppercase;color: lawngreen;position: relative;top: 111px;"><b>DASHBOARD</b></span></h1>
+</div>
+<div class="banner8">
+    <br><br> <h1 class="text-center bg-light text-warning welcome">DISPLAY DASHBOARD</h1>
+</div><br>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <table class="styled-table">
+          <thead>
+              <tr>
+                  <th>S NO.</th>
+                  <th>NAME</th>
+                  <th>COURSE</th>
+                  <th>ACTION</th>
+              </tr>
+          </thead>
+          <tbody>
+            <% var i=1 %>
+            <% data.forEach((item)=>{ %>     
+                <tr class="table-primary">
+                    <td><%= i++ %></td>
+                    <td><%= item.name %></td>
+                    <td><%= item.course %></td>
+                    <td>
+                        <a href="/detail/view/<%=item._id%>" class="btn btn-danger btn-lg"><i class="fa-solid fa-eye"></i></a>
+                        <a href="/detail/edit/<%=item._id%>" class="btn btn-warning btn-lg"><i class="fa-sharp fa-solid fa-pen-to-square"></i></a>
+                    </td>
+                </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </div>
+</section>
+  
+
+<%- include('../footer.ejs') %>
+
+
+
+  
