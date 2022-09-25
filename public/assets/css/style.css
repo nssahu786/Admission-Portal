@@ -95,14 +95,15 @@ body {
   HOME STYLES 
     ===================================*/
 .home-sec {
-    padding-top: 10px;
+    /* padding-top: 50px;
     padding-bottom: 60px;
-    background: url(../img/header.jpg) no-repeat center center;
+   
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
     color: #fff;
-    background-attachment: fixed;
+    
+    background-position: top; */
 }
 .banner{
 

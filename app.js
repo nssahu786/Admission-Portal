@@ -34,5 +34,5 @@ app.set('view engine','ejs')
 cdb();   
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`APP LISTENING ON PORT ${port}`)
   })

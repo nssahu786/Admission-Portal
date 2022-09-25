@@ -6,7 +6,7 @@ const cdb =()=>{
     //return mongoose.connect('mongodb://localhost:27017/portal_project')   
     return mongoose.connect(con) 
     .then(()=>{
-        console.log("Connection Sucessfully")
+        console.log("CONNECTION SUCCESSFULLY")
     })
     .catch((err)=>{
         console.log(err)
